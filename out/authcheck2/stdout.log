@@ -1,0 +1,4 @@
+len: 41 prefix: ghp_
+login: jarvis-agent-shn | id: 309456121
+core limit: 5000 remaining: 5000
+x-oauth-scopes: gist, read:org, repo, workflow
