@@ -1,0 +1,58 @@
+############ zeroperl-1500 (uswriting/zeroperl/issues/7)
+title : None
+state : None | comments: None | labels: []
+assignees: []
+--- body ---
+
+--- repo meta (uswriting/zeroperl) ---
+lang: None | stars: None | pushed: None | open_issues: None | license: None | forks: None
+--- last 6 comments ---
+  (total: 0)
+
+############ gitea-1880 (go-gitea/gitea/issues/24635)
+title : [Proposal] Support configuring permissions of automatic tokens of Actions jobs
+state : closed | comments: 38 | labels: ['type/proposal', 'topic/gitea-actions', '💎 Bounty', '$100']
+assignees: []
+--- body ---
+## Background
+
+When a Gitea Actions job has been picked by a runner, a automatically generated token will be given to the runner at the same time. This is a short-lived token that immediately becomes invalid when the job is completed.
+
+The token can be used to access the repository to which it belongs, such as cloning code via `actions/checkout`. You can use it with `gitea.token`, `secrets.GITEA_TOKEN`, or `github.token`, `secrets.GITHUB_TOKEN` to ensure compatibility.
+
+However, the permissions of this token are not really clear to everyone. IIRC, currently it can:
+
+- Read the code of the repository to which it belongs, and write the code if the job is not triggered by a pull request from a forked repository.
+- Read resources of public repositories or submit issues to them as a signed-in user.
+
+Sometimes it’s not convenient, for example, you cannot use this token to write packages, so it’s annoying when releasing.
+
+Some PRs try to add more permissions to this token, but I’m cautious about this, see:
+
+- https://github.com/go-gitea/gitea/pull/23729#issuecomment-1492811800
+- https://github.com/go-gitea/gitea/pull/24554#issuecomment-1537040811
+
+My reason is that, in the absence of a means to configure permissions for automatic tokens, we need to be cautious about granting more permissions by default, even if it may cause some inconvenience, as it could bring about security risks. I would say it's "inconvenient", not "impossible", because you can always provide an access token or deploy key as a secret to do anything you want, just like using an external CI/CD system.
+
+However, Gitea Actions isn't an external CI/CD system, so it could do better. The first thing that should be done is supporting the configuration of permissions for automatic tokens. It's not a simple thing, but the good news is that we can refer to GitHub.
+
+### How does a GitHub do
+
+On GitHub, you can choose between permissive mode or restricted mode on the settings page of a repository or organization.
+
+The two modes have different default permissions, see [Automatic token authentication](https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token). This is a coarse-grained setting. Sometimes it's not enough.
+
+So you can specify permissions for specific workflows or jobs in the workflow files. See:
+
+- [`permissions`](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#permissio
+--- repo meta (go-gitea/gitea) ---
+lang: Go | stars: 57043 | pushed: 2026-07-26T16:58:22Z | open_issues: 2658 | license: MIT | forks: 6948
+--- last 6 comments ---
+  @algora-pbc[bot]: 🎉 The pull request of @Excellencedev has been merged. The bounty can be rewarded [here](https://algora.io/claims/Cu7g8vaVGy5BnDad)  cc @, @mafen, @Frankkkkk, @the-maldridge, @alexanmtz
+  @algora-pbc[bot]: @Excellencedev: You've been awarded a **$200** by **Frank**! 👉 [Complete your Algora onboarding](https://algora.io/onboarding/dev) to collect the bounty.
+  @algora-pbc[bot]: @Excellencedev: You've been awarded a **$10** by **Markus Fenes**! 👉 [Complete your Algora onboarding](https://algora.io/onboarding/dev) to collect the bounty.
+  @algora-pbc[bot]: @Excellencedev: You've been awarded a **$200** by **Michael Aldridge**! 👉 [Complete your Algora onboarding](https://algora.io/onboarding/dev) to collect the bounty.
+  @algora-pbc[bot]: @Excellencedev: You've been awarded a **$100** by **Alexandre Magno**! 👉 [Complete your Algora onboarding](https://algora.io/onboarding/dev) to collect the bounty.
+  @Ikalus1988: /opire try
+  (total: 37)
+
