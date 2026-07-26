@@ -1,0 +1,23 @@
+### secret / identity check
+GH_PAT NOT SET
+whoami via API:
+  "message": "Bad credentials",
+
+### bounty issue: uswriting/zeroperl#7 ($1500)
+title: None
+state: None
+comments: None
+labels: []
+body:
+
+
+### repo meta zeroperl
+lang: None stars: None pushed: None open_issues: None
+
+### bounty issue: go-gitea/gitea#24635 ($1880)
+title: None
+state: None
+comments: None
+labels: []
+body:
+
