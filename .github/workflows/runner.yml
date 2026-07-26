@@ -5,10 +5,11 @@ on:
   workflow_dispatch:
 concurrency:
   group: relay-runner
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   run:
     runs-on: ubuntu-latest
+    timeout-minutes: 12
     permissions:
       contents: write
     steps:
@@ -29,7 +30,7 @@ jobs:
             name=$(basename "$job" .sh)
             echo "=== running $name ==="
             mkdir -p "out/$name"
-            ( bash "$job" ) > "out/$name/stdout.log" 2>&1 && echo ok > "out/$name/status" || echo fail > "out/$name/status"
+            ( timeout 480 bash "$job" ) > "out/$name/stdout.log" 2>&1 && echo ok > "out/$name/status" || echo "fail($?)" > "out/$name/status"
             rm -f "$job"
           done
       - name: Commit results (race-safe)
