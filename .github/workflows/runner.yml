@@ -21,9 +21,7 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
           GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          set -e
-          git config user.name "jarvis-agent-shn"
-          git config user.email "sindre.h.nordgreen+agent@gmail.com"
+          set -uo pipefail
           shopt -s nullglob
           jobs=(jobs/queue/*.sh)
           if [ ${#jobs[@]} -eq 0 ]; then echo "no jobs"; exit 0; fi
@@ -31,16 +29,22 @@ jobs:
             name=$(basename "$job" .sh)
             echo "=== running $name ==="
             mkdir -p "out/$name"
-            ( bash "$job" ) > "out/$name/stdout.log" 2>&1 && status=ok || status=fail
-            echo "$status" > "out/$name/status"
-            git mv "$job" "jobs/done/$name.sh"
+            ( bash "$job" ) > "out/$name/stdout.log" 2>&1 && echo ok > "out/$name/status" || echo fail > "out/$name/status"
+            rm -f "$job"
           done
-      - name: Commit results
+      - name: Commit results (race-safe)
         if: always()
         run: |
+          git config user.name "jarvis-agent-shn"
+          git config user.email "sindre.h.nordgreen+agent@gmail.com"
           git add -A
-          git commit -m "relay: job results [skip ci]" || echo "nothing to commit"
-          # pull-rebase in case of races, then push
-          for i in 1 2 3; do
-            git push && break || { git pull --rebase; sleep 2; }
+          git diff --cached --quiet && { echo "nothing to commit"; exit 0; }
+          git commit -m "relay: job results [skip ci]"
+          for i in 1 2 3 4 5; do
+            if git push; then echo pushed; exit 0; fi
+            echo "push rejected, rebasing (attempt $i)"
+            git fetch origin main
+            git rebase -X ours origin/main || git rebase --abort
+            sleep 2
           done
+          echo "push failed after retries"; exit 1
