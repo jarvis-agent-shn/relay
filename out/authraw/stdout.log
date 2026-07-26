@@ -1,0 +1,16 @@
+len GH_PAT: 36
+prefix: 0mO4KzX
+=== /user raw ===
+{
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+HTTP 401
+=== /rate_limit raw (token scheme) ===
+{
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+HTTP 401
