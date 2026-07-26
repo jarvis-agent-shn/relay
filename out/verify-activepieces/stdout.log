@@ -1,0 +1,118 @@
+===== activepieces/activepieces repo =====
+stars: 23435 | forks: 3961 | pushed: 2026-07-26 | lang: TypeScript | license: NOASSERTION | open_issues: 436
+===== issue #8072 full =====
+title: [MCP] Gmail
+state: open | assignees: [] | comments: 28 | author: kishanprmr
+labels: ['💎 Bounty', '$200', '🧩 area/third-party-pieces']
+created: 2025-06-16 updated: 2026-07-22
+--body--
+## 🧩 Product Overview
+
+Gmail is Google’s email platform for sending, receiving, labeling, archiving, and organizing messages.<br>This integration empowers AI agents and workflows to automate email-based processes, from detection to response, labeling, and thread management.
+
+---
+
+## ⚠️ Important Note for Contributors
+
+This Gmail piece already exists in Activepieces. Your task is to extend the current piece by adding additional actions and triggers as outlined in the documentation and reference materials.<br>Please avoid duplicating existing functionality. Review the current implementation before making changes, and ensure that all new features follow existing coding patterns and standards.
+
+PR https://github.com/activepieces/activepieces/pull/8083 has been finalized for this bounty and is currently pending App Review due to the required new scopes.
+Kindly refrain from submitting additional PRs for this bounty while we wait for the review to complete.
+
+---
+
+## 🚨 Triggers
+
+<!-- linear:table-colwidths:200,200 -->
+| **Trigger** | **Use Case** |
+| -- | -- |
+| **New Starred Email** | Fires when an email is starred (within 2 days). |
+| **New Conversation** | Fires when a new conversation (thread) begins. |
+| **New Attachment** | Fires when an email with an attachment arrives (with optional filters). |
+| **New Label** | Triggers when a new label is created. |
+
+---
+
+## 🛠️ Write Actions
+
+<!-- linear:table-colwidths:200,200 -->
+| **Action Item** | **Use Case** |
+| -- | -- |
+| **Reply to Email** | Reply within an existing thread, maintaining context. |
+| **Create Draft Reply** | Generate a reply draft within an existing thread. |
+| **Add Label to Email** | Attach a label to an individual email. |
+| **Remove Label from Email** | Remove a specific label from an email.Remove a specific label from an email. |
+| **Create Label** | Create a new user label in Gmail. |
+| **Archive Email** | Archive (move to “All Mail”) rather than deleting. |
+| **Delete Email** | Permanently move an email to Trash. |
+| **Remove Label from Thread** | Strip a label from all emails in a thread. |
+
+---
+
+## 🔍 Search Actions
+
+<!-- linear:table-colwidths:200,200 -->
+| **Action Item** | **Use Case** |
+| -- | -- |
+| **Find Email** | Locate a specific email using search keywords like subject, sender, or content. |
+
+---
+
+## 📚 API Reference
+
+* [Official Gmail API Documentation](<https://developers.google.com/workspace/gmail/api/guides>)
+
+---
+
+## 🧪 Test Account Access
+
+You can test Gmail APIs using a Goog
+===== ALL comments on #8072 (claim/assignment signals) =====
+@linear[bot] (2025-06-16): <p><a href="https://linear.app/activepieces/issue/AP-759/mcp-gmail">AP-759 [MCP] Gmail</a></p>
+@kishanprmr (2025-06-16): /bounty $200
+@algora-pbc[bot] (2025-06-16): ## 💎 $200 bounty [• Activepieces (YC S22)](https://algora.io/activepieces) ### Steps to solve: 1. **Start working**: Comment `/attempt #8072` with your implementation plan 2. **Submit work**: Create a pull request including `/claim #8072` i
+@Raushankumar-prog (2025-06-16): /attempt #8072
+@SaikiranSurapalli17 (2025-06-16): /attempt #8072
+@Ani-4x (2025-06-16): /attempt #8072
+@aryel780 (2025-06-16): /attempt #8072  
+@onyedikachi-david (2025-06-16): /attempt #8072
+@skyler-coder (2025-06-16): I get this error when trying to signin, how do i get an invitation  ![Image](https://github.com/user-attachments/assets/90d5a75b-3f07-416b-86c2-80d22251f2a1)
+@kishanprmr (2025-06-17): @skyler-coder please use Email: dev@ap.com Password: 12345678 for login in local dev environment.
+@gs03-dev (2025-07-31): /attempt #8072
+@kishanprmr (2025-08-01): PR #8083 has been finalized for this bounty and is currently pending App Review due to the required new scopes. Kindly refrain from submitting additional PRs for this bounty while we wait for the review to complete. 
+@thanhdz2k4 (2025-12-07): /attempt #8072
+@amalyakubov (2025-12-26): /attempt #8072
+@jayantpranjal0 (2026-01-21): Hi @kishanprmr, I am interested to work on this issue. I there is a pr marked for bounty in your commentsb, but I don't see any activity on it. Can you please confirm if this issue is available to work on?
+@arisclaw (2026-02-11): @activepieces maintainers, I have updated the PR (https://github.com/activepieces/activepieces/pull/11222) to include the additional triggers and actions specified in the issue comments (e.g., New Conversation trigger, Reply to Email action
+@arisclaw (2026-02-11): /attempt #8072
+@Crazy-D1359 (2026-02-14): /attempt #8072  Submitted PR #11244 with all requested features: - 6 new actions: Add/Remove Label to Email, Create Label, Archive Email, Delete Email, Remove Label from Thread - 1 new trigger: New Starred Email (using History API)  All imp
+@a827681306 (2026-02-16): /attempt #8072  Submitted PR #11268 with: - 6 new actions (Add/Remove Label, Create Label, Archive, Delete, Remove Label from Thread) - 1 new trigger (New Starred Email) - Bug fixes (registered unregistered Get Thread + New Conversation) - 
+@St34lthcole (2026-02-16): /attempt #8072
+@St34lthcole (2026-02-16): PR submitted: #11274  Extends the Gmail piece with 5 new actions (add/remove/create label, archive, delete) + 1 new trigger (new starred email) + `gmail.modify` scope. Follows existing piece patterns exactly.
+@Harmatta (2026-02-16): /attempt #8072
+@kishanprmr (2026-02-17): PR https://github.com/activepieces/activepieces/pull/8083 has been finalized for this bounty and is currently pending App Review due to the required new scopes. Kindly refrain from submitting additional PRs for this bounty while we wait for
+@liedsonsele-prog (2026-02-25): I wil do your job in 2hrs
+@li224242 (2026-02-27): /claim #8072. Working on MCP optimized actions (list_messages, get_message) with memory safety.
+@moth-asa (2026-03-02): /attempt #8072  Adding 6 new actions (Add/Remove Label, Create Label, Archive, Delete, Remove Label from Thread) and 1 new trigger (New Starred Email). Also registers the existing New Conversation trigger and adds required gmail.modify + gm
+@ck3960250 (2026-03-05): /attempt #8072\nStarting implementation now. I will submit a PR with tests and docs.
+@kishanprmr (2026-03-06): PR https://github.com/activepieces/activepieces/pull/8083 has been finalized for this bounty and is currently pending App Review due to the required new scopes. Kindly refrain from submitting additional PRs for this bounty while we wait for
+total comments: 28
+===== activepieces payout track record: recently closed 💎 bounties =====
+closed bounty count (approx): 173
+  #8135 [MCP] Canva | rewarded | 💎 Bounty $100 💰 Rewarded 🧩 area/third-party-pieces
+  #9424 [MCP] Mircosoft To Do | rewarded | good first issue 💎 Bounty 💰 Rewarded 🧩 area/third-
+  #9915 [MCP] Fathom | rewarded | good first issue 💎 Bounty 💰 Rewarded 🧩 area/third-
+  #9914 [MCP] MeisterTask | rewarded | good first issue 💎 Bounty $100 💰 Rewarded 🧩 area/t
+  #9847 [MPC] BigCommerce | rewarded | good first issue 💎 Bounty 💰 Rewarded $150 🧩 area/t
+  #7670 [MCP] pCloud | ? | good first issue 💎 Bounty $100
+  #8284 [MCP] Klaviyo | rewarded | 💎 Bounty $100 💰 Rewarded 🧩 area/third-party-pieces
+  #7668 [MCP] Attio | ? | good first issue 💎 Bounty $100
+  #9328 [MCP] Teamwork | rewarded | good first issue 💎 Bounty $100 💰 Rewarded 🧩 area/t
+  #10618 Native AI Selector | ? | good first issue 🌟 feature 💎 Bounty $30
+  #7860 [MCP] Circle.so | rewarded | good first issue 💎 Bounty $100 💰 Rewarded
+  #7861 [MCP] Cognito Forms | rewarded | good first issue 💎 Bounty 💰 Rewarded
+  #8021 [MCP] Skyvern | rewarded | good first issue 💎 Bounty $100 💰 Rewarded
+  #7919 [MCP] Crisp | rewarded | good first issue 💎 Bounty $100 💰 Rewarded
+  #7921 [MCP] Smartsheet | rewarded | good first issue 💎 Bounty $100 💰 Rewarded
+===== how activepieces bounties work (CONTRIBUTING / bounty docs) =====
+############ DONE
