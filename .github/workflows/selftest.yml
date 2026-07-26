@@ -1,26 +1,33 @@
-name: selftest
+name: bootstrap
 on:
   push:
-    paths: ['jobs/selftest.trigger']
+    paths: ['jobs/bootstrap.trigger']
   workflow_dispatch:
 jobs:
-  probe:
+  setup:
     runs-on: ubuntu-latest
-    permissions: { contents: write }
+    permissions:
+      contents: write
+      administration: write
     steps:
       - uses: actions/checkout@v4
-      - name: Probe environment
+      - name: Try to make repo private via GITHUB_TOKEN
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           mkdir -p out
-          echo "runner online: $(date -u)" > out/selftest.txt
-          echo "network github.com:" >> out/selftest.txt
-          curl -s -o /dev/null -w "  api.github.com/rate_limit: %{http_code}\n" https://api.github.com/rate_limit >> out/selftest.txt
-          curl -s -o /dev/null -w "  example.com: %{http_code}\n" https://example.com >> out/selftest.txt
-          node -v >> out/selftest.txt 2>&1 || true
+          code=$(curl -s -o out/priv.json -w "%{http_code}" -X PATCH \
+            -H "Authorization: token $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }} \
+            -d '{"private":true}')
+          echo "PATCH visibility -> $code" > out/bootstrap.txt
+          head -c 400 out/priv.json >> out/bootstrap.txt
       - name: Commit results
+        if: always()
         run: |
           git config user.name "jarvis-agent-shn"
           git config user.email "sindre.h.nordgreen+agent@gmail.com"
           git add out/
-          git commit -m "selftest results [skip ci]" || echo "no changes"
+          git commit -m "bootstrap results [skip ci]" || echo "no changes"
           git push
