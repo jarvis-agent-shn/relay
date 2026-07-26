@@ -1,0 +1,26 @@
+name: selftest
+on:
+  push:
+    paths: ['jobs/selftest.trigger']
+  workflow_dispatch:
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    permissions: { contents: write }
+    steps:
+      - uses: actions/checkout@v4
+      - name: Probe environment
+        run: |
+          mkdir -p out
+          echo "runner online: $(date -u)" > out/selftest.txt
+          echo "network github.com:" >> out/selftest.txt
+          curl -s -o /dev/null -w "  api.github.com/rate_limit: %{http_code}\n" https://api.github.com/rate_limit >> out/selftest.txt
+          curl -s -o /dev/null -w "  example.com: %{http_code}\n" https://example.com >> out/selftest.txt
+          node -v >> out/selftest.txt 2>&1 || true
+      - name: Commit results
+        run: |
+          git config user.name "jarvis-agent-shn"
+          git config user.email "sindre.h.nordgreen+agent@gmail.com"
+          git add out/
+          git commit -m "selftest results [skip ci]" || echo "no changes"
+          git push
