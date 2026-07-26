@@ -1,0 +1,169 @@
+############ QUERY: label:"💎 Bounty" state:open type:issue no:assignee
+  total_count: 553
+  $800    SecureBananaLabs/bug-bounty        c=43  Automate Bug Detection and Reviews
+          https://github.com/SecureBananaLabs/bug-bounty/issues/11398  [bug documentation enhancement good first issue help wanted b]
+  $0      WillSmithTE/qdrant-qdrant          c=9   Handle Out-Of-Disk gracefully
+          https://github.com/WillSmithTE/qdrant-qdrant/issues/337  [💎 Bounty 💰 Rewarded]
+  $0      WillSmithTE/qdrant-qdrant          c=11  Implement better handling of OOD issues in optimizer
+          https://github.com/WillSmithTE/qdrant-qdrant/issues/320  [💎 Bounty 💰 Rewarded]
+  $1000   xevrion-v2/agent-playground        c=63  Calculate the exact value of PI
+          https://github.com/xevrion-v2/agent-playground/issues/17  [good first issue bounty AI agent friendly 💎 Bounty $1k]
+  $50     xevrion-v2/agent-playground        c=89  Fix typo in README
+          https://github.com/xevrion-v2/agent-playground/issues/2  [good first issue bounty AI agent friendly 💎 Bounty $50]
+  $50     xevrion-v2/agent-playground        c=75  Add JSDoc to userService
+          https://github.com/xevrion-v2/agent-playground/issues/1  [good first issue bounty AI agent friendly 💎 Bounty $50]
+  $50     tine1117/oss-hunter-livefire       c=38  parse_duration drops the days (d) unit
+          https://github.com/tine1117/oss-hunter-livefire/issues/1  [💎 Bounty $50]
+  $780    SecureBananaLabs/bug-bounty        c=8   upload endpoint accepts empty file submissions as successf
+          https://github.com/SecureBananaLabs/bug-bounty/issues/2850  [bug enhancement good first issue help wanted bug bounty AI a]
+  $780    SecureBananaLabs/bug-bounty        c=5   auth refresh endpoint issues tokens without verifying the 
+          https://github.com/SecureBananaLabs/bug-bounty/issues/2847  [bug enhancement good first issue help wanted bug bounty AI a]
+  $780    SecureBananaLabs/bug-bounty        c=4   registerUser access token can reference a different user i
+          https://github.com/SecureBananaLabs/bug-bounty/issues/2845  [bug enhancement good first issue help wanted bug bounty AI a]
+  $430    SecureBananaLabs/bug-bounty        c=5   User creation endpoint has no input validation
+          https://github.com/SecureBananaLabs/bug-bounty/issues/1773  [bug good first issue help wanted bug bounty AI agent friendl]
+  $430    SecureBananaLabs/bug-bounty        c=3   Payment endpoint lacks authentication — unauthenticated pa
+          https://github.com/SecureBananaLabs/bug-bounty/issues/1772  [bug good first issue help wanted bug bounty AI agent friendl]
+  $430    SecureBananaLabs/bug-bounty        c=5   Upload endpoint lacks authentication — unauthenticated fil
+          https://github.com/SecureBananaLabs/bug-bounty/issues/1771  [bug good first issue help wanted bug bounty AI agent friendl]
+  $430    SecureBananaLabs/bug-bounty        c=7   Admin routes lack role-based access control — any authenti
+          https://github.com/SecureBananaLabs/bug-bounty/issues/1770  [bug good first issue help wanted bug bounty AI agent friendl]
+  $430    SecureBananaLabs/bug-bounty        c=4   Bug: user creation accepts empty payloads and client-contr
+          https://github.com/SecureBananaLabs/bug-bounty/issues/1766  [bug good first issue help wanted bug bounty AI agent friendl]
+  $430    SecureBananaLabs/bug-bounty        c=4   Bug: Missing admin role authorization check on admin metri
+          https://github.com/SecureBananaLabs/bug-bounty/issues/1764  [bug good first issue help wanted bug bounty AI agent friendl]
+  $430    SecureBananaLabs/bug-bounty        c=4   Bug: Multiple security vulnerabilities in API layer - regi
+          https://github.com/SecureBananaLabs/bug-bounty/issues/1760  [bug good first issue help wanted bug bounty AI agent friendl]
+  $430    SecureBananaLabs/bug-bounty        c=4   Bug: registerUser signs token with a different generated u
+          https://github.com/SecureBananaLabs/bug-bounty/issues/1758  [bug good first issue help wanted bug bounty AI agent friendl]
+  $430    SecureBananaLabs/bug-bounty        c=4   fix(auth): prevent admin role self-assignment during regis
+          https://github.com/SecureBananaLabs/bug-bounty/issues/1755  [bug good first issue help wanted bug bounty AI agent friendl]
+  $430    SecureBananaLabs/bug-bounty        c=7   Bug: Refresh endpoint mints tokens without validating a re
+          https://github.com/SecureBananaLabs/bug-bounty/issues/1750  [bug good first issue help wanted bug bounty AI agent friendl]
+  $430    SecureBananaLabs/bug-bounty        c=4   Registration token subject can drift from returned user id
+          https://github.com/SecureBananaLabs/bug-bounty/issues/1743  [bug good first issue help wanted bug bounty AI agent friendl]
+  $430    SecureBananaLabs/bug-bounty        c=4   fix: prevent admin role self-assignment during registratio
+          https://github.com/SecureBananaLabs/bug-bounty/issues/1742  [bug good first issue help wanted bug bounty AI agent friendl]
+  $430    SecureBananaLabs/bug-bounty        c=3   Bug: Proposal creation accepts records missing estimated d
+          https://github.com/SecureBananaLabs/bug-bounty/issues/1739  [bug good first issue help wanted bug bounty AI agent friendl]
+  $430    SecureBananaLabs/bug-bounty        c=6   fix: prevent admin role self-assignment
+          https://github.com/SecureBananaLabs/bug-bounty/issues/1737  [bug good first issue help wanted bug bounty AI agent friendl]
+  $430    SecureBananaLabs/bug-bounty        c=2   Bug: Rate limiter should count malformed JSON before body 
+          https://github.com/SecureBananaLabs/bug-bounty/issues/1735  [bug good first issue help wanted bug bounty AI agent friendl]
+  $700    SecureBananaLabs/bug-bounty        c=5   fix: prevent admin role self-assignment
+          https://github.com/SecureBananaLabs/bug-bounty/issues/1426  [bug documentation good first issue bug bounty AI agent frien]
+  $700    SecureBananaLabs/bug-bounty        c=1402 Low Handing Fruit Automation
+          https://github.com/SecureBananaLabs/bug-bounty/issues/743  [bug documentation good first issue help wanted bug bounty AI]
+  $0      PG-AGI/toingg-jarvis               c=18  [Feature]:  Cross-platform packaging and native installers
+          https://github.com/PG-AGI/toingg-jarvis/issues/13  [enhancement approved reward eligible 💎 Bounty $5]
+  $0      PG-AGI/toingg-jarvis               c=11  [Feature]:  Integrate Pipecat with Gemini API for real-tim
+          https://github.com/PG-AGI/toingg-jarvis/issues/11  [enhancement help wanted approved priority: high reward eligi]
+  $780    SecureBananaLabs/bug-bounty        c=448 Pixel Art Creation with high Creative Thinking
+          https://github.com/SecureBananaLabs/bug-bounty/issues/80  [good first issue help wanted bug bounty AI agent friendly bo]
+  $430    SecureBananaLabs/bug-bounty        c=237 Technical Poem Generation and Content Creation
+          https://github.com/SecureBananaLabs/bug-bounty/issues/76  [good first issue bug bounty AI agent friendly bounty 💎 Bount]
+  $750    SecureBananaLabs/bug-bounty        c=176 Benchmark APIs with p50, p95, p99 latency, RPS, error rate
+          https://github.com/SecureBananaLabs/bug-bounty/issues/30  [good first issue help wanted bug bounty AI agent friendly bo]
+  $0      SecureBananaLabs/bug-bounty        c=85  Implement a fully functional Admin Panel
+          https://github.com/SecureBananaLabs/bug-bounty/issues/29  [good first issue bug bounty AI agent friendly bounty 💎 Bount]
+  $400    UnsafeLabs/RFC-5322                c=16  [bounty $400] Implement ABNF-compliant email address parse
+          https://github.com/UnsafeLabs/RFC-5322/issues/1  [good first issue help wanted 💎 Bounty $400]
+  $350    SecureBananaLabs/bug-bounty        c=116 Implement Secure Payment Gateway and Payment Service
+          https://github.com/SecureBananaLabs/bug-bounty/issues/1  [bug good first issue bug bounty AI agent friendly bounty 💎 B]
+  $8600   ClankerNation/OpenAgents           c=19  [ Bounty $8k ] [ API ] Add structured error responses with
+          https://github.com/ClankerNation/OpenAgents/issues/202  [Autonomus Agents Only good first issue help wanted 💎 Bounty ]
+  $7000   ClankerNation/OpenAgents           c=11  [ Bounty $7k ] [ Solidity ] Fix Timelock queued transactio
+          https://github.com/ClankerNation/OpenAgents/issues/201  [Autonomus Agents Only good first issue help wanted 💎 Bounty ]
+  $2200   ClankerNation/OpenAgents           c=18  [ Bounty $2k ] [ API ] Fix ratelimit.py doesn't differenti
+          https://github.com/ClankerNation/OpenAgents/issues/200  [Autonomus Agents Only good first issue help wanted 💎 Bounty ]
+  $3800   ClankerNation/OpenAgents           c=11  [ Bounty $3k ] [ SDK ] Add contract deployment helpers to 
+          https://github.com/ClankerNation/OpenAgents/issues/199  [Autonomus Agents Only good first issue help wanted 💎 Bounty ]
+  $9300   ClankerNation/OpenAgents           c=16  [ Bounty $9k ] [ SDK ] Fix encoding.ts decodeParameter doe
+          https://github.com/ClankerNation/OpenAgents/issues/198  [Autonomus Agents Only good first issue help wanted 💎 Bounty ]
+############ QUERY: label:bounty state:open type:issue no:assignee
+  total_count: 3523
+  $25     zhangjiayang6835-cyber/bounty-plaza c=0   [Bounty] [BOUNTY] [$25] Prove that you personally smelled 
+          https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/706  [bounty real]
+  $600    zhangjiayang6835-cyber/bounty-plaza c=0   [Bounty] [Bounty] [$600] Add Thursday's Boots
+          https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/707  [bounty real]
+  $0      relayhop/sn-monetization-runtime   c=1   [radar] SN open bounty 2026-07-26T17:11
+          https://github.com/relayhop/sn-monetization-runtime/issues/227  [radar sn bounty]
+  $0      relayhop/sn-monetization-runtime   c=0   [radar] SN open bounty 2026-07-26T15:14
+          https://github.com/relayhop/sn-monetization-runtime/issues/226  [radar sn bounty]
+  $0      relayhop/sn-monetization-runtime   c=2   [radar] SN open bounty 2026-07-26T13:48
+          https://github.com/relayhop/sn-monetization-runtime/issues/225  [radar sn bounty]
+  $0      relayhop/sn-monetization-runtime   c=3   [radar] SN open bounty 2026-07-26T11:33
+          https://github.com/relayhop/sn-monetization-runtime/issues/224  [radar sn bounty]
+  $120    zhangjiayang6835-cyber/ai-research c=3   [BUG] Session Fixation + Session ID in URL $120
+          https://github.com/zhangjiayang6835-cyber/ai-research/issues/1491  [bug bounty hard security]
+  $25     Iamgoofball/-tg-station            c=0   [BOUNTY] [$25] Prove that you personally smelled a number 
+          https://github.com/Iamgoofball/-tg-station/issues/327  [bounty]
+  $150    zhangjiayang6835-cyber/ai-research c=2   [BUG] JWT Kid Injection → Path Traversal → Secret Key Leak
+          https://github.com/zhangjiayang6835-cyber/ai-research/issues/1489  [bug bounty hard security]
+  $600    Iamgoofball/-tg-station            c=0   [Bounty] [$600] Add Thursday's Boots
+          https://github.com/Iamgoofball/-tg-station/issues/325  [bounty]
+  $25     zhangjiayang6835-cyber/bounty-plaza c=2   [Bounty] [BOUNTY] [$25] Open a duplicate of this issue to 
+          https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/702  [bounty real]
+  $0      Iamgoofball/-tg-station            c=2   Gta 5
+          https://github.com/Iamgoofball/-tg-station/issues/324  [bounty]
+  $800    zhangjiayang6835-cyber/bounty-plaza c=11  [Bounty] Automate Bug Detection and Reviews
+          https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/700  [bounty real]
+  $800    SecureBananaLabs/bug-bounty        c=43  Automate Bug Detection and Reviews
+          https://github.com/SecureBananaLabs/bug-bounty/issues/11398  [bug documentation enhancement good first issue help wanted b]
+  $0      relayhop/sn-monetization-runtime   c=60  [radar] SN open bounty 2026-07-25T08:20
+          https://github.com/relayhop/sn-monetization-runtime/issues/223  [radar sn bounty]
+  $25     zhangjiayang6835-cyber/bounty-plaza c=12  [Bounty] [BOUNTY] [$25] [Priority] [Easy] [Agentic] Puzzle
+          https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/695  [bounty real]
+  $25     Iamgoofball/-tg-station            c=1   [BOUNTY] [$25] [Priority] [Easy] [Agentic] Puzzlescript im
+          https://github.com/Iamgoofball/-tg-station/issues/289  [bounty]
+  $75     zhangjiayang6835-cyber/bounty-plaza c=24  [Bounty] 💵🐛[BUG BOUNTY] [$50 PER BUG] Complete Removal of 
+          https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/693  [bounty real]
+  $0      Iamgoofball/-tg-station            c=7   [BOUNTY] [CRITICAL] [VERY EASY] [0.1ETH] Add the seahorse 
+          https://github.com/Iamgoofball/-tg-station/issues/286  [bug bounty]
+  $100    Iamgoofball/-tg-station            c=6   💵🐛[BUG BOUNTY] [$50 PER BUG] Complete Removal of Copywritt
+          https://github.com/Iamgoofball/-tg-station/issues/285  [bounty]
+  $0      Iamgoofball/-tg-station            c=1   [Bounty] [50$ per PR] Add non-copyright infringing Family 
+          https://github.com/Iamgoofball/-tg-station/issues/284  [bounty]
+  $200    zhangjiayang6835-cyber/bounty-plaza c=13  [Bounty] [Bounty] [$200] Add a shrimp-person species 🦐
+          https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/692  [bounty real]
+  $1000   zhangjiayang6835-cyber/bounty-plaza c=40  [Bounty] [BOUNTY] 1000 USD - Fix all flaky unit tests
+          https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/691  [bounty real]
+  $0      Iamgoofball/-tg-station            c=3   [BOUNTY] 1000 USD - Fix all flaky unit tests
+          https://github.com/Iamgoofball/-tg-station/issues/281  [bounty]
+  $200    Iamgoofball/-tg-station            c=5   [Bounty] [$200] Add a shrimp-person species 🦐
+          https://github.com/Iamgoofball/-tg-station/issues/280  [bounty]
+  $0      Iamgoofball/-tg-station            c=6   [BOUNTY] [200$] [URGENT] Write a Python/Javascript based l
+          https://github.com/Iamgoofball/-tg-station/issues/279  [bounty]
+  $670    zhangjiayang6835-cyber/bounty-plaza c=18  [Bounty] [BOUNTY] [$670 USD] [HARD] Replace Action delays 
+          https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/689  [bounty real]
+  $100    zhangjiayang6835-cyber/bounty-plaza c=20  [Bounty] [BOUNTY] [$100 USD] Resprite the corgi into a hyp
+          https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/690  [bounty real]
+  $0      Iamgoofball/-tg-station            c=0   [BOUNTY] [AGENTIC] [AGENT] [MANDATE OF HEAVEN] [SIMPLE] [C
+          https://github.com/Iamgoofball/-tg-station/issues/277  [bounty]
+  $50     zhangjiayang6835-cyber/bounty-plaza c=21  [Bounty] Bounty: end-to-end test copperhead create (brief 
+          https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/686  [bounty real]
+  $10     jaasielitaigq/pgx                  c=23  🎯 Fix deadlock and inconsistent waiter queue state in pgxp
+          https://github.com/jaasielitaigq/pgx/issues/1  [bounty opire $10]
+  $0      Iamgoofball/-tg-station            c=4   [BOUNTY] [NO CODE] [REPLY TO ISSUE ONLY] [$5 USD] Player C
+          https://github.com/Iamgoofball/-tg-station/issues/275  [bounty]
+  $10     jaasielitaigq/go-git               c=15  🎯 Prevent inconsistent repository state when Worktree.Chec
+          https://github.com/jaasielitaigq/go-git/issues/1  [bounty opire $10]
+  $0      UID9622/lh-standard-adapter        c=9   🏆 [BOUNTY] Ruby Adapter — lh_standard_adapter for RubyGems
+          https://github.com/UID9622/lh-standard-adapter/issues/5  [bounty good-first-issue ruby]
+  $0      UID9622/lh-standard-adapter        c=8   🏆 [BOUNTY] Java/Kotlin Adapter — lh_standard_adapter for M
+          https://github.com/UID9622/lh-standard-adapter/issues/4  [bounty good-first-issue java]
+  $0      UID9622/lh-standard-adapter        c=5   🏆 [BOUNTY] Rust Adapter — lh_standard_adapter for crates.i
+          https://github.com/UID9622/lh-standard-adapter/issues/3  [bounty good-first-issue rust]
+  $0      UID9622/lh-standard-adapter        c=8   🏆 [BOUNTY] Go Adapter — lh_standard_adapter for Go modules
+          https://github.com/UID9622/lh-standard-adapter/issues/2  [bounty good-first-issue go]
+  $0      UID9622/lh-standard-adapter        c=7   🏆 [BOUNTY] JavaScript/TypeScript Adapter — lh_standard_ada
+          https://github.com/UID9622/lh-standard-adapter/issues/1  [bounty good-first-issue javascript]
+  $30     zhangjiayang6835-cyber/bounty-plaza c=5   [Bounty] [Bounty] [$30] Apply an owospeak speech filter to
+          https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/684  [bounty real]
+  $3000   zhangjiayang6835-cyber/bounty-plaza c=2   [Bounty] [BOUNTY] [$3000] Secondary extraction shooter gam
+          https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/685  [bounty real]
+############ QUERY: label:"💰 Bounty" state:open type:issue no:assignee
+  api-msg: You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect 
+############ QUERY: label:"Algora: Bounty" state:open type:issue no:assignee
+  api-msg: You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect 
+############ DONE
