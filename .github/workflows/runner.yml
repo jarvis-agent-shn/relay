@@ -1,0 +1,46 @@
+name: runner
+on:
+  push:
+    paths: ['jobs/queue/**']
+  workflow_dispatch:
+concurrency:
+  group: relay-runner
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-node@v4
+        with: { node-version: '22' }
+      - name: Execute queued jobs
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          set -e
+          git config user.name "jarvis-agent-shn"
+          git config user.email "sindre.h.nordgreen+agent@gmail.com"
+          shopt -s nullglob
+          jobs=(jobs/queue/*.sh)
+          if [ ${#jobs[@]} -eq 0 ]; then echo "no jobs"; exit 0; fi
+          for job in "${jobs[@]}"; do
+            name=$(basename "$job" .sh)
+            echo "=== running $name ==="
+            mkdir -p "out/$name"
+            ( bash "$job" ) > "out/$name/stdout.log" 2>&1 && status=ok || status=fail
+            echo "$status" > "out/$name/status"
+            git mv "$job" "jobs/done/$name.sh"
+          done
+      - name: Commit results
+        if: always()
+        run: |
+          git add -A
+          git commit -m "relay: job results [skip ci]" || echo "nothing to commit"
+          # pull-rebase in case of races, then push
+          for i in 1 2 3; do
+            git push && break || { git pull --rebase; sleep 2; }
+          done
