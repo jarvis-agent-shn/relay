@@ -1,0 +1,21 @@
+--- enable GitHub Pages (main / root) ---
+{
+  "url": "https://api.github.com/repos/jarvis-agent-shn/roundtable/pages",
+  "status": null,
+  "cname": null,
+  "custom_404": false,
+  "html_url": "https://jarvis-agent-shn.github.io/roundtable/",
+  "build_type": "legacy",
+  "source": {
+    "branch": "main",
+    "path": "/"
+  },
+  "public": true,
+  "protected_domain_state": null,
+  "pending_domain_unverified_at": null,
+  "https_enforced": true
+}
+
+HTTP 201
+--- get pages status ---
+url: https://jarvis-agent-shn.github.io/roundtable/ | status: None | msg: 
